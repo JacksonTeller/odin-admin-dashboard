@@ -1,0 +1,49 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+}
+
+.header-1 {
+    background-color: #FAC42F;
+    
+    grid-column: 2 / 4;
+}
+
+.header-2 {
+    background-color: #FFCF4A;
+    
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.sidebar {
+    background-color: #4A5FAD;
+
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.projects {
+    background-color: #2F5BFA;
+
+    grid-column: 2;
+    grid-row: 3 / -1;
+}
+
+.announcements {
+    background-color: #AD8410;
+
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.trending {
+    background-color: #AD8410;
+
+    grid-column: 3;
+    grid-row: 4;
+}

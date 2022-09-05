@@ -4,13 +4,24 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 2fr;
+    grid-template-rows: 0.6fr 0.6fr 2fr 2fr;
 }
 
 .header-1 {
     background-color: #FAC42F;
     
     grid-column: 2 / 4;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search {
+    margin-right: 100px;
+
+    height: 24px;
+    width: 30rem;
 }
 
 .header-2 {

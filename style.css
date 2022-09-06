@@ -107,23 +107,47 @@ li {
     margin: 40px 0px;
 }
 
+.inside-container {
+    grid-column: 2 / 4;
+    grid-row: 3 / -1;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.6fr 2fr 0.6fr 2fr;
+}
+
+.project-header {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .projects {
     background-color: #2F5BFA;
 
+    grid-column: 1;
+    grid-row: 2 / -1;
+}
+
+.announce-header {
     grid-column: 2;
-    grid-row: 3 / -1;
+    grid-row: 1;
 }
 
 .announcements {
     background-color: #AD8410;
 
-    grid-column: 3;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.trending-header {
+    grid-column: 2;
     grid-row: 3;
 }
 
 .trending {
     background-color: #AD8410;
 
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 4;
 }

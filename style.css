@@ -71,7 +71,23 @@ button {
 
     grid-column: 1;
     grid-row: 1 / -1;
+
+    /* display: flex; */
 }
+
+.logo {
+    font-size: 24px;
+
+    display: flex;
+    padding: 10px;
+}
+
+.logo-img {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
 
 .projects {
     background-color: #2F5BFA;

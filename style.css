@@ -116,6 +116,11 @@ li {
     grid-template-rows: 0.6fr 2fr 0.6fr 2fr;
 }
 
+.project-header, .announce-header, .trending-header {
+    align-self: end;
+    padding: 10px 15px;
+}
+
 .project-header {
     grid-column: 1;
     grid-row: 1;

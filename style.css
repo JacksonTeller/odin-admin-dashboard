@@ -121,6 +121,15 @@ li {
     padding: 10px 15px;
 }
 
+.projects {
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+
 .project-header {
     grid-column: 1;
     grid-row: 1;
@@ -128,9 +137,24 @@ li {
 
 .projects {
     background-color: #2F5BFA;
-
+    
     grid-column: 1;
     grid-row: 2 / -1;
+}
+
+.project-card {
+    background-color: bisque;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    font-size: 22px;
+}
+
+.card-imgs{
+    align-self: flex-end;
 }
 
 .announce-header {

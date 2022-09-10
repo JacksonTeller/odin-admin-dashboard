@@ -47,10 +47,12 @@ label {
     align-content: end;
 }
 
-.small-avatar {
+.small-avatar-box {
     display: grid;
     justify-self: center;
+}
 
+.small-avatar {
     background-color: white;
     border-radius: 50%;
     height: 50px;
@@ -71,17 +73,27 @@ label {
     grid-row: 2;
 
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    grid-template-rows: 35px 1fr;
     align-items: center;
 }
 
-.big-avatar {
+.big-avatar-box {
     padding-right: 20px;
 
     grid-column: 1;
     grid-row: 1 / 3;
     justify-self: end;
+}
+
+.big-avatar {
+    display: grid;
+    align-self: center;
+
+    background-color: white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
 }
 
 .status {
@@ -102,6 +114,9 @@ label {
 
 button {
     margin: 0 20px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
 
     grid-row: 1 / 3;
 }

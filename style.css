@@ -12,16 +12,13 @@ body {
     
     grid-column: 2 / 4;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
 }
 
-#search {
-    margin-right: 100px;
-
-    height: 24px;
-    width: 30rem;
+.header-1 > div, label, input {
+    align-self: center;
+    text-align: center;
 }
 
 .header-2 {
@@ -72,20 +69,21 @@ button {
     grid-column: 1;
     grid-row: 1 / -1;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 0.6fr 3fr 2fr;
 }
 
 .logo {
     font-size: 24px;
 
-    display: flex;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: center;
+    align-self: center;
 }
 
-.logo-img {
-    padding-left: 10px;
-    padding-right: 15px;
+.logo-text {
+    text-align: start;
 }
 
 a {
@@ -99,12 +97,18 @@ ul {
     padding: 0;
 }
 
-li {
-    padding: 10px 0px 10px 20px;
+.main-links > ul {
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
 }
 
-.main-links {
-    margin: 40px 0px;
+.support-links > ul {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}
+
+li {
+    align-self: center;
 }
 
 .inside-container {
@@ -145,12 +149,20 @@ li {
 .project-card {
     background-color: bisque;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.card-header {
+    align-self: end;
+}
+
+.card-text {
+    align-self: start;
 }
 
 .card-imgs{
-    align-self: flex-end;
+    text-align: end;
 }
 
 .announcements-header {
@@ -160,15 +172,15 @@ li {
 
 .announcements {
     background-color: #AD8410;
-    padding: 4px;
+    padding: 10px;
     font-size: 14px;
 
     grid-column: 2;
     grid-row: 2;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(55px, 1fr));
+    gap: 10px;
 }
 
 .announce {
@@ -183,14 +195,14 @@ li {
 .trending {
     background-color: #AD8410;
     font-size: 14px;
-    padding: 4px;
+    padding: 10px;
 
     grid-column: 2;
     grid-row: 4;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: repeat(4, minmax(40px, 1fr));
+    gap: 10px;
 }
 
 .trend-line {

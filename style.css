@@ -4,7 +4,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 0.6fr 0.6fr 2fr 2fr;
+    grid-template-rows: 0.5fr 0.6fr 2fr 2fr;
 }
 
 .header-1 {
@@ -13,12 +13,55 @@ body {
     grid-column: 2 / 4;
 
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 70px 2fr;
 }
 
-.header-1 > div, label, input {
+.header-1 > div{
     align-self: center;
     text-align: center;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 100px 4fr;
+    gap: 20px;
+}
+
+label {
+    justify-self: end;
+    display: grid;
+    align-content: center;
+}
+
+#search {
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.bell {
+    padding-right: 14px;
+
+    display: grid;
+    justify-self: end;
+    align-content: end;
+}
+
+.small-avatar {
+    display: grid;
+    justify-self: center;
+
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.small-name {
+    padding-left: 14px;
+
+    display: grid;
+    justify-self: start;
 }
 
 .header-2 {

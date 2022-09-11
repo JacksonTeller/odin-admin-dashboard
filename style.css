@@ -233,6 +233,12 @@ li {
     grid-template-rows: 60px 2fr 60px;
 }
 
+.project-card:hover {
+    transition: 0.2s;
+    transform: scale(1.01);
+
+}
+
 .card-header {
     align-self: end;
 }
@@ -285,7 +291,7 @@ li {
 .trending {
     background-color: #ADD2EB;
     margin-right: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     padding: 14px;
     font-size: 14px;
     border-radius: 9px;

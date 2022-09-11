@@ -1,2 +1,6 @@
 # odin-admin-dashboard
-Image by <a href="https://pixabay.com/users/naobim-1099306/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1813100">naobim</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1813100">Pixabay</a> 
+Image by naobim from Pixabay 
+Image by BavoDoesStuff from Pixabay
+Image by missartem from Pixabay
+Image by Piyapong Saydaung from Pixabay
+Image by Atky from Pixabay

@@ -1,5 +1,5 @@
 body {
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
 
     display: grid;
@@ -180,6 +180,7 @@ li {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 0.6fr 2fr 0.6fr 2fr;
+    overflow: auto;
 }
 
 .project-header, .announcements-header, .trending-header {
@@ -210,7 +211,7 @@ li {
     padding: 0 20px;
 
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 60px 2fr 60px;
 }
 
 .card-header {
@@ -273,6 +274,21 @@ li {
 
 .trend-line {
     background-color: beige;
+
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.trend-ava, .trend-ava > img {
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.trend-user {
+    padding-left: 10px;
+    align-self: center;
 }
 
 .user-id {

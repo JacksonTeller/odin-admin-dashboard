@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
     height: 100vh;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #813F09;
 
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -8,7 +13,7 @@ body {
 }
 
 .header-1 {
-    background-color: #FAC42F;
+    background-color: #ADD2EB;
     
     grid-column: 2 / 4;
 
@@ -67,7 +72,7 @@ label {
 }
 
 .header-2 {
-    background-color: #FFCF4A;
+    background-color: #ADD2EB;
     
     grid-column: 2 / 4;
     grid-row: 2;
@@ -123,7 +128,7 @@ button {
 
 .sidebar {
     color: white;
-    background-color: #4A5FAD;
+    background-color: #2C7CB0;
     padding-left: 30px;
 
     grid-column: 1;
@@ -174,6 +179,8 @@ li {
 }
 
 .inside-container {
+    background-color: #f0f6f0;
+
     grid-column: 2 / 4;
     grid-row: 3 / -1;
 
@@ -189,8 +196,7 @@ li {
 }
 
 .projects {
-    padding: 10px;
-    background-color: #2F5BFA;
+    padding: 0 10px;
 
     grid-column: 1;
     grid-row: 2 / -1;
@@ -207,7 +213,7 @@ li {
 }
 
 .project-card {
-    background-color: bisque;
+    background-color: #ADD2EB;
     padding: 0 20px;
 
     display: grid;
